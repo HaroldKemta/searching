@@ -37,7 +37,7 @@ int linearSearch(int array[], int size, int val) ;
             printf("The value was found at position %d", index);  
 
         } else {
-            
+
             printf("Value not found");  
         }
         
@@ -72,7 +72,7 @@ int linearSearch(int array[], int size, int val) ;
 
 
 
-    void runSearch(int array[],int size, char search_Type, int val) {
+    int runSearch(int array[],int size, char search_Type, int val) {
     // dont forget charater literals ' '
 
         int index = -1; // declare outside so it can be returned 
