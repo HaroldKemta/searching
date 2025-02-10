@@ -62,19 +62,23 @@ void print(int array[],int size) {
 
 
 void runSearch(int array[],int size, char search_Type, int val) {
+// dont forget charater literals ' '
 
-        if ( search_Type == a) {
+    int index = -1; // declare outside so it can be returned 
 
-            int index = linearSearch(array, size, val) ;
+        if ( search_Type == 'a') {
+
+            index = linearSearch(array, size, val) ;
         } 
         
-        else if( search_Type == b) {
+        else if( search_Type == 'b') {
 
-            int index = binary_iterative(array, size, val) ;
+            index = binary_iterative(array, size, val) ;
 
-        } else if( search_Type == c) {
+        } else if( search_Type == 'c') {
 
-            int index = binary_recursive(array, size, val) ;
+            index = binary_recursive(array, size, val) ;
         } 
-        
+
+    return index;    
 }
