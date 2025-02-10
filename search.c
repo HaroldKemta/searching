@@ -30,9 +30,17 @@ int linearSearch(int array[], int size, int val) ;
 
         scanf("%c",search_Type) ;
 
-        runSearch(array, size, &search_Type, &val) ;
+        int index = runSearch(array, size, &search_Type, &val) ;
 
+        if (index != -1) {
 
+            printf("The value was found at position %d", index);  
+
+        } else {
+            
+            printf("Value not found");  
+        }
+        
 
     }
 
@@ -81,9 +89,13 @@ int linearSearch(int array[], int size, int val) ;
             } else if( search_Type == 'c') {
 
                 index = binary_recursive(array, size, val) ;
-            } 
+            } else { 
 
-        return index;    
+                printf("enter a real value") ;
+            }
+
+
+        return index ;    
     }
 
 
