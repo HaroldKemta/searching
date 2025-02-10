@@ -118,12 +118,17 @@ int binary_iterative(int array[], int size, int val) ;
     int binary_iterative(int array[], int size, int val) {
 
         printf("First we need to sort the array\n") ;
-        printf("\nPick (a) for Selection Sort, and (b) for insertion sort\n") ;
+        printf("Pick (a) for Selection Sort, and (b) for insertion sort\n") ;
 
         char pick ;
         scanf(" %c ", &pick) 
 
-        if ( pick == 'a')
+        if ( pick == 'a') {
+
+            printf("you have chose Selection sort ");
+
+            selection_Sort()
+        }
 //finish this
         sorting()
     }
