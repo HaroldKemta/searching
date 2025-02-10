@@ -112,6 +112,7 @@ int binary_iterative(int array[], int size, int val) ;
 
         return -1 ;
     }
+    
 
 
 
