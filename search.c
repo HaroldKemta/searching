@@ -63,5 +63,18 @@ void print(int array[],int size) {
 
 void runSearch(int array[],int size, char search_Type, int val) {
 
-    
+        if ( search_Type == a) {
+
+            int index = linearSearch(array, size, val) ;
+        } 
+        
+        else if( search_Type == b) {
+
+            int index = binary_iterative(array, size, val) ;
+
+        } else if( search_Type == c) {
+
+            int index = binary_recursive(array, size, val) ;
+        } 
+        
 }
