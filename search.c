@@ -20,15 +20,15 @@ int binary_iterative(int array[], int size, int val) ;
 
         int val;
 
-        printf(" Give me a value to search for : ") ;
+        printf(" Give me a value to search for : \n") ;
 
         scanf(" %d", &val)
 
-        printf("what kind of search would you like ") ;
+        printf("what kind of search would you like \n") ;
 
         char search_Type ;
 
-        printf(" (a)= linear (b)= binary_iterative (c)= binary_recursive ") ;
+        printf(" (a)= linear (b)= binary_iterative (c)= binary_recursive \n") ;
 
         scanf(" %c",search_Type) ;
 
@@ -36,11 +36,11 @@ int binary_iterative(int array[], int size, int val) ;
 
         if (index != -1) {
 
-            printf("The value was found at position %d", index);  
+            printf("The value was found at position %d\n", index);  
 
         } else {
 
-            printf("Value not found");  
+            printf("Value not found\n");  
         }
         
 
@@ -51,7 +51,7 @@ int binary_iterative(int array[], int size, int val) ;
 
     void print(int array[],int size) {
 
-        printf("\nindex:") ;
+        printf("index:") ;
 
         for(  int index = 0 ; index < size ; index++ ){
 
@@ -93,7 +93,7 @@ int binary_iterative(int array[], int size, int val) ;
                 index = binary_recursive(array, size, val) ;
             } else { 
 
-                printf("enter a real value") ;
+                printf("enter a real value\n") ;
             }
 
 
@@ -117,11 +117,13 @@ int binary_iterative(int array[], int size, int val) ;
 
     int binary_iterative(int array[], int size, int val) {
 
-        printf("\nFirst we need to sort the array") ;
-        printf("\nPick (a) for Selection Sort, and (b) for insertion sort") ;
+        printf("First we need to sort the array\n") ;
+        printf("\nPick (a) for Selection Sort, and (b) for insertion sort\n") ;
 
         char pick ;
-        scanf(" %c ", &pick) ;
+        scanf(" %c ", &pick) 
+
+        if ( pick == 'a')
 
         sorting()
     }
