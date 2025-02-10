@@ -124,6 +124,6 @@ int binary_iterative(int array[], int size, int val) ;
         scanf(" %c ", &pick) 
 
         if ( pick == 'a')
-
+//finish this
         sorting()
     }
