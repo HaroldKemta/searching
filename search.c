@@ -22,7 +22,7 @@ int binary_iterative(int array[], int size, int val) ;
 
         printf(" Give me a value to search for : ") ;
 
-        scanf("%d", &val)
+        scanf(" %d", &val)
 
         printf("what kind of search would you like ") ;
 
@@ -30,7 +30,7 @@ int binary_iterative(int array[], int size, int val) ;
 
         printf(" (a)= linear (b)= binary_iterative (c)= binary_recursive ") ;
 
-        scanf("%c",search_Type) ;
+        scanf(" %c",search_Type) ;
 
         int index = runSearch(array, size, &search_Type, &val) ;
 
@@ -62,7 +62,7 @@ int binary_iterative(int array[], int size, int val) ;
 
         for (int i=0 ; i < size; i++) {
 
-            printf("%4d", array[i]) ;
+            printf(" %4d", array[i]) ;
 
         }
 
@@ -117,5 +117,11 @@ int binary_iterative(int array[], int size, int val) ;
 
     int binary_iterative(int array[], int size, int val) {
 
-        
+        printf("\nFirst we need to sort the array") ;
+        printf("\nPick (a) for Selection Sort, and (b) for insertion sort") ;
+
+        char pick ;
+        scanf(" %c ", &pick) ;
+
+        sorting()
     }
