@@ -6,6 +6,8 @@ void runSearch(int array[],int size, char search_Type, int val) ;
 
 int linearSearch(int array[], int size, int val) ;
 
+int binary_iterative(int array[], int size, int val) ;
+
 
 
     int main (void) {
@@ -109,4 +111,11 @@ int linearSearch(int array[], int size, int val) ;
         }
 
         return -1 ;
+    }
+
+
+
+    int binary_iterative(int array[], int size, int val) {
+
+        
     }
