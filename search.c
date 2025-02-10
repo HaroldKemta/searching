@@ -2,6 +2,8 @@
 
 void print(int array[],int size) ;
 
+void runSearch(int array[],int size, char search_Type, int val) ;
+
 
 int main (void) {
 
@@ -17,7 +19,16 @@ int main (void) {
 
     scanf("%d", &val)
 
-    printf("what kind of search ")
+    printf("what kind of search would you like ") ;
+
+    char search_Type ;
+
+    printf(" (a)= linear (b)= binary_iterative (c)= binary_recursive ") ;
+
+    scanf("%c",search_Type) ;
+
+    runSearch(array, size, &search_Type, &val) ;
+
 
 
 }
@@ -43,5 +54,14 @@ void print(int array[],int size) {
     }
 
     printf("\n") ;
+    
+}
+
+
+
+
+
+void runSearch(int array[],int size, char search_Type, int val) {
+
     
 }
